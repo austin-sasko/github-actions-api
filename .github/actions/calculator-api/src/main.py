@@ -30,6 +30,6 @@ for pod in calc_resp['queryresult']['pods']:
     calc_result = f"{calc_result}{pod['subpods'][0]['plaintext']}<br />"
 
 print(calc_result)
-# Set the fact-output to resulting value of calc_result
+# Set the fact-output to resulting value of expression and calc_result
 print(f"::set-output name=input_fact::{expression}")
 print(f"::set-output name=output_fact::{calc_result}")
