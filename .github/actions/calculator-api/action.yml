@@ -1,0 +1,11 @@
+name: "Calculator action"
+
+description: "Get external data with GitHub Actions"
+
+outputs:
+  fact:
+    description: Resulting calculation from the  api
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
