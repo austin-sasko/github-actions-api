@@ -1,0 +1,27 @@
+name: "issue maker"
+
+description: "create an issue with a calculation of two random numbers as the body"
+
+inputs:
+  issueTitle:
+    description: "A name for the calculation issue"
+    required: true
+    default: "Calculated Results"
+
+  calc_input:
+    description: "the input the calculator is analyzing"
+    required: true
+    default: "0 + 0 + 0"
+
+  calc_result:
+    description: "the results the calculator retrieves"
+    required: true
+    default: "0"
+
+  repoToken:
+    description: "Authentication token, use secrets.GITHUB_TOKEN"
+    required: true
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
