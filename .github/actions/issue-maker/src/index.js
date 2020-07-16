@@ -5,6 +5,8 @@ const github = require("@actions/github");
 async function run() {
   const issueTitle = core.getInput("issueTitle");
   const issueBody = core.getInput("issueBody");
+  const calc_input = core.getInput("calc_input");
+  const calc_result = core.getInput("calc_result");
 
   const token = core.getInput("repoToken");
   try {
