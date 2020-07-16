@@ -1,6 +1,6 @@
 name: "issue maker"
 
-description: "create an issue with a calculation of two random nunmbers as the body"
+description: "create an issue with a calculation of two random numbers as the body"
 
 inputs:
   issueTitle:
