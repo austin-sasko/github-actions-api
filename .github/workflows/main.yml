@@ -33,5 +33,5 @@ jobs:
       uses: ./.github/actions/issue-maker
       with:
         repoToken: ${{secrets.GITHUB_TOKEN}}
-        catFact: ${{steps.calc.outputs.fact}}
+        issueBody: ${{steps.calc.outputs.fact}}
         issueTitle: "Calculation Results"
