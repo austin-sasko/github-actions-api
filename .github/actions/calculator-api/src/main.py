@@ -31,4 +31,5 @@ for pod in calc_resp['queryresult']['pods']:
 
 print(calc_result)
 # Set the fact-output to resulting value of calc_result
-print(f"::set-output name=fact::{calc_result}")
+print(f"::set-output name=input_fact::{expression}")
+print(f"::set-output name=output_fact::{calc_result}")
